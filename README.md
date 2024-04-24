@@ -1,1 +1,1 @@
-# Ecommerce-Jewellery-Code-By-Me
+# Ecommerce-Jewellery

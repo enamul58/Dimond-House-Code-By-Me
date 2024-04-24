@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-color: #fff;
+  --balck-color: #000;
+  --secondary-color: #212529;
+  --primary-color: #ff553e;
+}
+
+/*
+=====================
+Top Headere
+=====================
+*/
+
+.top-header {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+}
