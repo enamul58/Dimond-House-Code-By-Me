@@ -35,7 +35,11 @@ ul {
 Top Headere
 =====================
 */
-
+/* .navigation_wrapper {
+} */
+.navbar {
+  z-index: 1000 !important;
+}
 .top-header {
   color: var(--white-color);
   background-color: var(--secondary-color);
@@ -74,22 +78,76 @@ Top Headere
   top: 0;
   width: 100%;
   background-color: var(--balck-color);
-  transition: all 0.1s linear;
+  transition: all 0.01s ease-in-out;
   z-index: 1000;
+  margin-top: 0;
+}
+
+.show-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white-color);
+  display: inline-block;
+}
+
+.show-btn::after,
+.show-btn::before {
+  margin-right: auto;
+  margin-left: auto;
+  height: 0.5px;
+  background-color: var(--white-color);
+  content: "";
+  display: block;
+  width: 130px;
+  transition: transform 0.5s linear;
+  transform-origin: left bottom;
+}
+
+.show-btn::before {
+  margin-bottom: 8px;
+  transition: transform 0.5s linear;
+  transform-origin: left top;
+}
+
+.show-btn::after {
+  margin-top: 8px;
+  transition: transform 0.5s linear;
+  transform-origin: left top;
+}
+
+.show-btn:hover::before {
+  transform: rotate(18deg);
+  background-color: var(--primary-color);
+}
+
+.show-btn:hover::after {
+  transform: rotate(-18deg);
+  background-color: var(--primary-color);
 }
 
 /*
-=====================
-Carousel
-=====================
+===================== 
+Carousel 
+===================== 
 */
 #cmt_carousel {
-  z-index: -1;
-  position: absolute;
-  top: 53px;
-  left: 0;
+  z-index: -1 !important;
 }
 
-#cmt_carousel .carousel-item {
-  height: 560px;
+.carousel {
+  margin-top: -85px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 80%;
+  font-family: "Dosis", sans-serif;
+}
+
+.carousel-caption h2 {
+  font-size: 48px;
+  font-weight: 400;
 }
