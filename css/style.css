@@ -88,6 +88,7 @@ Top Headere
   font-weight: 700;
   color: var(--white-color);
   display: inline-block;
+  font-family: "Dosis", sans-serif;
 }
 
 .show-btn::after,
@@ -140,9 +141,9 @@ Carousel
 
 .carousel-caption {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -55%);
   width: 80%;
   font-family: "Dosis", sans-serif;
 }
@@ -150,4 +151,110 @@ Carousel
 .carousel-caption h2 {
   font-size: 48px;
   font-weight: 400;
+}
+
+/*
+==================
+New Arrivals
+==================
+*/
+#new_arrivals {
+  padding-top: 60px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding-bottom: 85px;
+}
+
+#new_arrivals h2 {
+  font-weight: 600;
+}
+
+#new_arrivals h2,
+#new_arrivals p {
+  font-family: "Dosis", sans-serif;
+}
+
+.img-box {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.img_caption {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-90%);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img_caption h3 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+}
+
+.img_caption p {
+  font-family: "Dosis", sans-serif;
+}
+.show-btn {
+  margin: auto;
+}
+
+.img-box:nth-child(2) .img_caption {
+  color: var(--balck-color);
+}
+
+.img-box:nth-child(2) .img_caption .show-btn {
+  color: var(--balck-color);
+}
+
+.img-box:nth-child(2) .img_caption .show-btn:hover {
+  color: var(--primary-color);
+}
+
+.img-box:nth-child(2) .img_caption .show-btn::before,
+.img-box:nth-child(2) .img_caption .show-btn::after {
+  background-color: var(--balck-color);
+}
+
+/*
+====================== 
+section-4 Best Sellers 
+====================== 
+*/
+
+#best_sellers {
+  padding-top: 85px;
+  padding-left: 85px;
+  background-color: var(--balck-color);
+  font-family: "Dosis", sans-serif;
+}
+
+.best_sellers_heading h3 {
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 20px;
+  padding: 4px 20px;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item:nth-child(2) .nav-link {
+  margin-left: 15px;
+  margin-right: 15px;
 }
