@@ -225,7 +225,7 @@ section-4 Best Sellers
 
 #best_sellers {
   padding-top: 85px;
-  padding-left: 85px;
+  padding-bottom: 85px;
   background-color: var(--balck-color);
   font-family: "Dosis", sans-serif;
 }
@@ -255,6 +255,118 @@ section-4 Best Sellers
 }
 
 .nav-tabs .nav-item:nth-child(2) .nav-link {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#best_sellers img {
+  transition: all 0.3s linear;
+}
+
+#best_sellers img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+.tab_img_caption {
+  margin-bottom: 10px;
+}
+
+.tab_img_caption .tab_img_info span,
+.tab_img_caption .tab_img_info i {
+  color: var(--white-color);
+  opacity: 0.6;
+}
+
+.tab_img_caption p {
+  font-size: 18px;
+  color: var(--white-color);
+  font-size: "Dosis", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab_img_caption .price {
+  color: var(--white-color);
+}
+
+.tab_img_caption .feedback {
+  color: #f4d632;
+}
+
+.tab_img_caption .feedback div + i {
+  color: var(--white-color);
+}
+
+/* 
+===================
+Deal Of The Day 
+=================== 
+*/
+
+#dealOfTheDay {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background-color: var(--secondary-color);
+}
+
+#dealOfTheDay img {
+  border: 1px solid var(--white-color);
+}
+
+.dealImgInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+==========================
+Latest Section Blog
+==========================
+*/
+
+#latestNews {
+  background-color: var(--balck-color);
+  color: var(--white-color);
+  font-family: "Dosis", sans-serif;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+#latestNews h2 {
+  font-size: 25px;
+}
+
+#latestNews p {
+  opacity: 0.6;
+}
+
+.newsImgInfo {
+  margin-top: 15px;
+}
+
+/*
+====================== 
+Footer Section  
+======================
+*/
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.icon i {
+  font-size: 24px;
+}
+
+.icon i:hover {
+  color: var(--primary-color);
+}
+
+.icon i:nth-child(2) {
   margin-left: 15px;
   margin-right: 15px;
 }
